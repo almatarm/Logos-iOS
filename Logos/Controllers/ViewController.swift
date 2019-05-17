@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let topNode = DB.instance.getTopNodes()[0]
+        print(topNode)
+        print(DB.instance.getChildren(node: topNode))
+        
     }
 
 
